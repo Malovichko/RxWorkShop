@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RxWorkShop</string>
+    <string name="name_label">Name:</string>
+    <string name="id_label">ID:</string>
+    <string name="toolbar_text">Character List</string>
+    <string name="birth_year_label">Birth year:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="character">Character</string>
+</resources>
