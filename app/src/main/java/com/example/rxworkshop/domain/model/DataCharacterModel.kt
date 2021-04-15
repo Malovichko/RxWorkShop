@@ -1,4 +1,4 @@
-package com.example.rxworkshop.data
+package com.example.rxworkshop.domain.model
 
 data class DataCharacterModel(
     val name: String,

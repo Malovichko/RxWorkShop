@@ -1,14 +1,12 @@
-package com.example.rxworkshop.list
+package com.example.rxworkshop.present.list
 
 import android.view.View
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rxworkshop.R
-import com.example.rxworkshop.data.DataModel
+import com.example.rxworkshop.domain.model.DataModel
 
-class ViewHolder constructor(private val staffView: View) :
+class ViewHolder constructor(private val staffView: View, private val onClick: (id: Int) -> Unit) :
     RecyclerView.ViewHolder(staffView) {
 
     private lateinit var textID: TextView
@@ -20,5 +18,9 @@ class ViewHolder constructor(private val staffView: View) :
 
         textID.text = model.ID.toString()
         textName.text = model.name
+
+        staffView.setOnClickListener{
+            onClick(model.ID)
+        }
     }
 }
